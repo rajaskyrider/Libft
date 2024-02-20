@@ -6,7 +6,7 @@
 /*   By: rpandipe <rpandipe@student.42luxembourg.lu>+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 18:34:27 by rpandipe          #+#    #+#             */
-/*   Updated: 2024/02/19 18:41:39 by rpandipe         ###   ########.fr       */
+/*   Updated: 2024/02/20 14:44:53 by rpandipe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,9 @@ int		ft_isprint(int c);
 int		ft_strlen(char *str);
 void	*ft_memset(void *s, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
+void	*ft_memmove(void *dest, const void *src, size_t n);
+int		ft_toupper(int c);
+int		ft_tolower(int c);
 
 #endif
