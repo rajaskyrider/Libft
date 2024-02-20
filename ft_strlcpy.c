@@ -6,27 +6,17 @@
 /*   By: rpandipe <rpandipe@student.42luxembourg.lu>+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 20:07:36 by rpandipe          #+#    #+#             */
-/*   Updated: 2024/01/16 09:56:28 by rpandipe         ###   ########.fr       */
+/*   Updated: 2024/02/20 16:24:56 by rpandipe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-int	ft_strlen(char *str)
+#include "libft.h"
+
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	int	i;
+	size_t	i;
+	size_t	rt;
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
-
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
-{
-	unsigned int	i;
-	int				rt;
-
-	rt = ft_strlen(src);
+	rt = ft_strlen((char *)src);
 	i = 0;
 	if (size != 0)
 	{
