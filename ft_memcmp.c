@@ -6,7 +6,7 @@
 /*   By: rpandipe <rpandipe@student.42luxembourg.lu>+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 17:11:56 by rpandipe          #+#    #+#             */
-/*   Updated: 2024/02/20 17:39:05 by rpandipe         ###   ########.fr       */
+/*   Updated: 2024/02/21 13:14:19 by rpandipe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	const unsigned char	*src1;
 	const unsigned char	*src2;
-	size_t	i;
+	size_t				i;
 
 	i = 0;
 	src1 = s1;

@@ -1,40 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rpandipe <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/20 17:52:07 by rpandipe          #+#    #+#             */
-/*   Updated: 2024/02/21 13:33:07 by rpandipe         ###   ########.fr       */
+/*   Created: 2024/02/21 14:27:50 by rpandipe          #+#    #+#             */
+/*   Updated: 2024/02/21 14:28:14 by rpandipe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	i;
 	size_t	j;
-	size_t	start;
+	char	*str;
 
-	i = 0;
-	j = 0;
-	start = 0;
-	if (*little == 0 || little == NULL)
-		return ((char *)big);
-	while (i < len && big[i] != 0)
+	str = 0;
+	if (set == 0)
+		return (ft_strdup((char *)s1));
+	if (s1 != 0)
 	{
-		if (big[i] == little[j])
-		{
-			start = i;
-			while (i < len && little[j] != 0 && little[++j] == big[++i])
-				;
-			if (little[j] == 0)
-				return ((char *)(big + start));
-			else
-				return (NULL);
-		}
-		i++;
+		i = 0;
+		j = ft_strlen((char *)s1);
+		while (s1[i] && ft_strchr(set, s1[i]))
+			i++;
+		while (s1[j - 1] && ft_strchr(set, s1[j - 1]) && j > i)
+			j--;
+		str = (char *)malloc(sizeof(char) * (j - i + 1));
+		if (str)
+			ft_strlcpy(str, &s1[i], j - i + 1);
 	}
-	return (NULL);
+	return (str);
 }
