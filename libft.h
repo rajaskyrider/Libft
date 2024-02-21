@@ -6,14 +6,14 @@
 /*   By: rpandipe <rpandipe@student.42luxembourg.lu>+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 18:34:27 by rpandipe          #+#    #+#             */
-/*   Updated: 2024/02/21 18:10:03 by rpandipe         ###   ########.fr       */
+/*   Updated: 2024/02/21 19:19:54 by rpandipe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stddef.h>
+# include <unistd.h>
 # include <stdlib.h>
 
 int		ft_isalpha(int c);
@@ -43,5 +43,7 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 #endif
