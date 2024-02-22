@@ -6,7 +6,7 @@
 /*   By: rpandipe <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 16:15:01 by rpandipe          #+#    #+#             */
-/*   Updated: 2024/02/22 16:35:23 by rpandipe         ###   ########.fr       */
+/*   Updated: 2024/02/22 19:30:06 by rpandipe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -15,5 +15,5 @@ t_list	*ft_lstlast(t_list *lst)
 {
 	while (lst && lst->next)
 		lst = lst->next;
-	return(lst);
+	return (lst);
 }
