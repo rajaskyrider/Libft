@@ -6,9 +6,10 @@
 /*   By: rpandipe <rpandipe@student.42luxembourg.lu>+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 16:16:12 by rpandipe          #+#    #+#             */
-/*   Updated: 2024/02/21 16:56:50 by rpandipe         ###   ########.fr       */
+/*   Updated: 2024/02/22 11:08:00 by rpandipe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {

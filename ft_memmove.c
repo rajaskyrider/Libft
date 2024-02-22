@@ -6,9 +6,11 @@
 /*   By: rpandipe <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 20:24:30 by rpandipe          #+#    #+#             */
-/*   Updated: 2024/02/20 14:29:35 by rpandipe         ###   ########.fr       */
+/*   Updated: 2024/02/22 11:09:26 by rpandipe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

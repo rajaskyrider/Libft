@@ -6,9 +6,11 @@
 /*   By: rpandipe <rpandipe@student.42luxembourg.lu>+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 17:11:56 by rpandipe          #+#    #+#             */
-/*   Updated: 2024/02/21 13:14:19 by rpandipe         ###   ########.fr       */
+/*   Updated: 2024/02/22 11:10:29 by rpandipe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

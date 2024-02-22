@@ -6,9 +6,10 @@
 /*   By: rpandipe <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 14:58:23 by rpandipe          #+#    #+#             */
-/*   Updated: 2024/02/20 15:29:25 by rpandipe         ###   ########.fr       */
+/*   Updated: 2024/02/22 11:09:56 by rpandipe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
