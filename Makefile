@@ -6,7 +6,7 @@
 #    By: rpandipe <rpandipe@student.42luxembourg.lu>+#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/22 10:22:20 by rpandipe          #+#    #+#              #
-#    Updated: 2024/02/22 11:26:39 by rpandipe         ###   ########.fr        #
+#    Updated: 2024/02/22 21:11:55 by rpandipe         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,11 @@ SRCS	= ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 	  ft_atoi.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c \
 	  ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_striteri.c \
 	  ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+SRCSB	= ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
+	  ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c \
+	  ft_lstmap.c
 OBJS	= $(SRCS:.c=.o)
+OBJSB	= $(SRCSB:.c=.o)
 NAME	= libft.a
 LIBC	= ar rcs
 
@@ -32,13 +36,16 @@ $(NAME): $(OBJS)
 .c.o: 
 	$(CC) $(CFLAGS) -c $< -o  ${<:.c=.o}
 
+bonus: $(NAME) $(OBJSB)
+	$(LIBC) $(NAME) $(OBJSB)
+
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) $(OBJSB)
 
 fclean: clean
-	$(RM) $(NAME)
+	$(RM) $(NAME) $(bonus)
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all bonus clean fclean re
 

@@ -6,9 +6,11 @@
 /*   By: rpandipe <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 16:02:19 by rpandipe          #+#    #+#             */
-/*   Updated: 2024/02/22 16:13:11 by rpandipe         ###   ########.fr       */
+/*   Updated: 2024/02/22 21:12:42 by rpandipe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_lstsize(t_list *lst)
 {
