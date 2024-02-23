@@ -6,7 +6,7 @@
 /*   By: rpandipe <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 16:50:30 by rpandipe          #+#    #+#             */
-/*   Updated: 2024/02/22 19:20:50 by rpandipe         ###   ########.fr       */
+/*   Updated: 2024/02/23 15:29:52 by rpandipe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	temp = *lst;
 	if (new == NULL)
 		return ;
-	if (lst == NULL)
+	if (*lst == NULL)
 		*lst = new;
 	else
 	{
