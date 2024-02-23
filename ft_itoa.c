@@ -6,7 +6,7 @@
 /*   By: rpandipe <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 17:31:43 by rpandipe          #+#    #+#             */
-/*   Updated: 2024/02/22 11:12:14 by rpandipe         ###   ########.fr       */
+/*   Updated: 2024/02/23 11:24:02 by rpandipe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -16,6 +16,8 @@ size_t	int_count(int n)
 	size_t	count;
 
 	count = 0;
+	if (n == 0)
+		return (1);
 	if (n < 0)
 		count++;
 	while (n != 0)
@@ -42,7 +44,7 @@ char	*ft_itoa(int n)
 	ans = (char *)malloc(sizeof(char) * (count + 1));
 	if (!ans)
 		return (NULL);
-	ans[count] = 0;
+	ans[count] = '\0';
 	count--;
 	if (n == 0)
 		ans[0] = '0';
